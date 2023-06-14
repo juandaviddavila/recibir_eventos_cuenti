@@ -108,7 +108,7 @@ let limpiar_archivos = async function () {
     } finally {
         setTimeout(function () {
             limpiar_archivos();
-        }, parseInt(process.env.tiempoMsEnvio));
+        }, parseInt(1000*60*60));
     }
 
 }
